@@ -1,0 +1,15 @@
+body {
+    margin: 0px;
+    background-color: antiquewhite;
+}
+
+.centered {
+    margin: 10% auto;
+    text-align: center;
+}
+
+input {
+    display: block;
+    width: 20%;
+    margin: auto;
+}
