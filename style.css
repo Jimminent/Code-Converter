@@ -6,10 +6,14 @@ body {
 .centered {
     margin: 10% auto;
     text-align: center;
+    overflow-wrap: normal;
 }
 
 input {
     display: block;
     width: 20%;
-    margin: auto;
+    margin: 10px auto;
 }
+
+
+
