@@ -14,6 +14,9 @@ const input = document.querySelector("#textBox");
 
 const para = document.querySelector("p");
 
+// let textCopy = document.getElementById("result");
+
+
 
 encodeButton.addEventListener("click", codify);
 
@@ -47,4 +50,11 @@ function decodify() {
 
 function getKeyByValue(object, value) {
     return Object.keys(object).find(key => object[key] === value);
+  }
+
+  function copyText() {
+
+    navigator.clipboard.writeText(para.textContent);
+    /* Alert the copied text */
+    alert("Copied the result: " + para.textContent);
   }
