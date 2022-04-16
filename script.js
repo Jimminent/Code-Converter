@@ -50,11 +50,10 @@ function decodify() {
 
 function getKeyByValue(object, value) {
     return Object.keys(object).find(key => object[key] === value);
-  }
+}
 
-  function copyText() {
-
+function copyText() {
+    // console.log(para.textContent);
     navigator.clipboard.writeText(para.textContent);
-    /* Alert the copied text */
-    alert("Copied the result: " + para.textContent);
-  }
+    // console.log(para.textContent);
+}
