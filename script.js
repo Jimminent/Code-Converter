@@ -35,6 +35,7 @@ function codify() {
     }
     // space = space.join(newMessage);
     para.textContent = newMessage.join("");
+    clearInput();
 }
 
 function decodify() {
@@ -46,10 +47,15 @@ function decodify() {
         newMessage.push(getKeyByValue(font,c));
     }
     para.textContent = newMessage.join("");
+    clearInput();
 }
 
 function getKeyByValue(object, value) {
     return Object.keys(object).find(key => object[key] === value);
+}
+
+function clearInput() {
+    input.value = "";
 }
 
 function copyText() {
