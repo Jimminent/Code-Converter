@@ -27,7 +27,7 @@ button {
     border-color: rgb(161, 191, 245);
 }
 
-@media (max-width: 400px) {
+@media (max-width: 401px) {
     input {
         width: 80%
     }
