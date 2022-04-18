@@ -23,7 +23,7 @@ encodeButton.addEventListener("click", codify);
 decodeButton.addEventListener("click", decodify);
 
 function codify() {
-    originalMessage = input.value;
+    originalMessage = input.value.toLowerCase();
     newMessage = [];
     for (var x = 0; x < originalMessage.length; x++) {
         var c = originalMessage.charAt(x);
